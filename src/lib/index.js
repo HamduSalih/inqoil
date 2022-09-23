@@ -34,7 +34,7 @@ export default function Inqoil({
       method: "PUT",
       body: formData,
     };
-    const res = await fetch(`http://localhost:5000`, options);
+    const res = await fetch(`https://inqoil-server.vercel.app`, options);
     const Res = await res.json();
     handlesChange(Res)
   };
