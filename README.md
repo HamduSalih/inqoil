@@ -5,7 +5,7 @@ A simple reactjs file upload library that is used to upload files to Supabase St
 ## Prerequisites
 - Before installing, get your key by (registering [here](https://inqoil.vercel.com/))
 - Make sure you have a Supabase account. You can get (one [here](https://supabase.com/))
-- Get your service url and anon key from your Supabase account
+- Create a project and get your project url and anon key from your Supabase account
 - Create at least one storage bucket.
 
 ## Installation
@@ -54,4 +54,13 @@ export default function Home() {
 
 | Option                | Type                        | Description                                                                                                         | value example                                             |
 | --------------------- | --------------------------- | ------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
-| name                  | string                      | the name for your form (if exist)                                                                                   | `"myFile"`
+| supabaseUrl                  | string                      | supabase project url                                                                                   | `"https://fdfsgfgjnnthdgshgg.supabase.co"`
+| supabaseAnonKey                  | string                      | supabase anon public key                                                                                   | `"ewsldkvnkmwscldskmomkdmslmdisoicdsocmdocdcd.ddcsdoicjviofjviodcevnreivndiojdojsaiadivnasindinadsindaiodsnoadd.dcscsacbisciscuscsduicnsducdsucbeubewuybusdsueusdbdudscnuenusid.ddcwdubeuybwuyebvyuwbceuuwbuvuibduivbevubucyebyueubriauburvbaivybuerhuyewbuy"`
+| handlesChange                  | function                      | a function to receive response from inqoil                                                                                   | ``` 
+const handlesChange = (response) => {
+    console.log(response);
+  };
+```
+| bucket                  | string                      | supabase storage bucket name                                                                                   | `"test-bucket"`
+| folder                  | string                      | supabase storage folder name                                                                                  | `"test"`
+| fileName                  | string                      | name to be given to the file being uploaded                                                                                   | `"hamdev"`
