@@ -56,11 +56,7 @@ export default function Home() {
 | --------------------- | --------------------------- | ------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
 | supabaseUrl                  | string                      | supabase project url                                                                                   | `"https://fdfsgfgjnnthdgshgg.supabase.co"`
 | supabaseAnonKey                  | string                      | supabase anon public key                                                                                   | `"ewsldkvnkmwscldskmomkdmslmdisoicdsocmdocdcd.ddcsdoicjviofjviodcevnreivndiojdojsaiadivnasindinadsindaiodsnoadd.dcscsacbisciscuscsduicnsducdsucbeubewuybusdsueusdbdudscnuenusid.ddcwdubeuybwuyebvyuwbceuuwbuvuibduivbevubucyebyueubriauburvbaivybuerhuyewbuy"`
-| handlesChange                  | function                      | a function to receive response from inqoil                                                                                   | ``` 
-const handlesChange = (response) => {
-    console.log(response);
-  };
-```
+| handlesChange                  | function                      | a function to receive response from inqoil                                                                                   |const handlesChange = (response) => {console.log(response);};
 | bucket                  | string                      | supabase storage bucket name                                                                                   | `"test-bucket"`
 | folder                  | string                      | supabase storage folder name                                                                                  | `"test"`
 | fileName                  | string                      | name to be given to the file being uploaded                                                                                   | `"hamdev"`
